@@ -5,6 +5,7 @@ metadata:
   labels:
     app: nginx 
     environment: development
+  namespace: default
 spec:
   replicas: 3
   selector:
@@ -19,4 +20,4 @@ spec:
       - name: nginx
         image: nginx:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8080
